@@ -16,8 +16,8 @@ Este projeto é uma landing page dedicada a conscientização sobre questões am
 
 ## Estrutura do Projeto
 
-- **/public**: Contém os arquivos estáticos (HTML, CSS, JS).
-- **/src**: Código do servidor em Node.js.
+- **pasta raiz**: Contém os arquivos estáticos (HTML, CSS, JS).
+- **server.js**: Código do servidor em Node.js.
 - **package.json**: Gerencia as dependências do projeto.
 
 ## Dependências
@@ -91,8 +91,8 @@ Chart.js: Library for creating graphs.
 
 ## Project Structure
 
-/public: Contains static files (HTML, CSS, JS).
-/src: Server code in Node.js.
+root folder: Contains static files (HTML, CSS, JS).
+server.js: Server code in Node.js.
 package.json: Manages the project's dependencies.
 
 
