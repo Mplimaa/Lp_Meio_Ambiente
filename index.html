@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plástico Zero</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS externo -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Vamos Juntos Reduzir o Plástico!</h1>
+        <nav>
+            <ul>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#carrossel">Curiosidades</a></li>
+                <li><a href="#infografico">Infográfico</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <center><br><br>
+        <button id="iniciarQuiz" type="button">Quero Fazer o Quiz</button>
+        
+        <div id="quiz" style="display: none;"></div><br><br>
+        <button id="mostrarResultados" type="button" style="display: none;">Mostrar Resultados</button>
+
+        <div id="resultadosContainer" style="display: none;">
+            <h2>Resultados do Quiz</h2>
+            <canvas id="graficoResultados" width="400" height="200"></canvas>
+        </div>
+        
+    </center>
+
+    <!-- carrossel das imagens -->
+    <section id="carrossel">
+        <div class="slides">
+            <div class="slide" title="Animais lutam para viver" onclick="window.open('https://pt.wikipedia.org/wiki/Polui%C3%A7%C3%A3o_por_pl%C3%A1stico', '_blank');">
+                <img src="imagens/plastico.jpeg" alt="peixe sufocado">
+            </div>
+            <div class="slide" title="Lixo nas praias" onclick="window.open('https://pt.wikipedia.org/wiki/Detrito_marinho', '_blank');">
+                <img src="imagens/lixo-praia.jpeg" alt="Lixo nas praias">
+            </div>
+            <div class="slide" title="Praias limpas" onclick="window.open('https://pt.wikipedia.org/wiki/Litoral_do_Brasil', '_blank');">
+                <img src="imagens/praia-limpa.jpeg" alt="Praias limpas">
+            </div>
+            <div class="slide" title="Florestas o pulmão do mundo" onclick="window.open('https://pt.wikipedia.org/wiki/Lista_de_florestas_nacionais_do_Brasil', '_blank');">
+                <img src="imagens/floresta.jpeg" alt="Florestas">
+            </div>
+        </div>
+    </section>
+
+     <section id="infografico">
+        <center>
+            <h2>Impacto do Plástico no Meio Ambiente</h2>
+        </center>
+        <canvas id="graficoPlastico" title="Aumento na quantidade de plástico nos oceanos ao longo dos anos X reciclagem do plástico"></canvas>
+    </section> 
+
+    <section id="dicas">
+        <center>
+            <h2>Dicas para Reduzir o Plástico</h2>
+            <ul>
+                <li>Use garrafas reutilizáveis.</li>
+                <li>Troque sacolas plásticas por reutilizáveis.</li>
+                <li>Compre produtos a granel sempre que possível.</li>
+            </ul>
+        </center>
+    </section>
+    <br><br>
+    <footer>
+        <center>
+            <b>  <p>Comprometa-se a reduzir o plástico!</p></b>
+        </center>
+    </footer>
+
+  <script src="script.js"></script> <!-- JavaScript externo -->
+  <p id="contagemVisitas"></p> <!-- Elemento para mostrar contagem de visitas -->
+</body>
+</html>

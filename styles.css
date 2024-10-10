@@ -1,0 +1,125 @@
+:root {
+    --cor-fundo: #f0f8ff; /* Azul claro */
+    --cor-principal: #4CAF50; /* Verde */
+    --cor-secundaria: #ffcc00; /* Amarelo */
+    --cor-texto: #333;
+}
+
+header {
+    background: var(--cor-principal);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--cor-secundaria);
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: var(--cor-principal);
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #ffa500; /* Amarelo mais escuro */
+    transform: scale(1.05); /* Leve aumento no botão */
+}
+
+canvas {
+    max-width: 100%;
+    margin: 20px 0;
+    border: 2px solid var(--cor-principal);
+    border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+    header, nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+section, header {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.01); /* Leve aumento ao passar o mouse */
+}
+
+/* carrocel da imagens */
+#carrossel {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 100vh; /* Ocupa toda a altura da tela */
+    overflow: hidden; /* Oculta partes fora da área visível */
+
+}
+
+.slides {
+    display: flex; /* Exibe os slides em linha */
+    transition: transform 0.5s ease; /* Transição suave */
+    height: 100%; /* Faz os slides ocuparem toda a altura do carrossel */
+
+}
+
+.slide {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    height: 100%; /* Altura fixa para todos os slides */
+    transition: transform 0.5s ease; /* Transição suave */
+}
+
+.slide img {
+    width: 100%; /* Faz a imagem preencher a largura do slide */
+    height: 100%; /* Faz a imagem preencher a altura do slide */
+    object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    margin: 0; /* Remove a margem padrão */
+}
